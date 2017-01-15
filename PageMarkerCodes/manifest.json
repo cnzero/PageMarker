@@ -1,0 +1,52 @@
+{
+	"manifest_version":2,
+	"name":"PageMarker",
+	"description":"Web pages markup tool.",
+	"version":"0.0.0.1",
+	// "default_locale":"en",
+
+	"icons":
+	{
+		"52":"images/M52.png",
+		"104":"images/M104.png",
+		"128":"images/M128.png"
+	},
+
+	// only one of [browser_action], [page_action] and [app] can be specified.
+	"browser_action":
+	{
+		"default_icon":
+		{
+			"52":"images/M52.png",
+			"104":"images/M104.png",
+			"128":"images/M128.png"
+		},
+		"default_title":"browser_action",
+		"default_popup":"popup.html"
+	},
+
+	// "page_action":
+	// {
+	// 	"default_icon":
+	// 	{
+	// 		"52":"images/M52.png",
+	// 		"104":"images/M104.png",
+	// 		"128":"images/M128.png"
+	// 	},
+	// 	"default_title":"page_action",
+	// 	"default_popup":"popup.html"
+	// }
+
+	"background":
+	{
+		"scripts":["background.js"]
+	},
+
+	"options_page": "options.html",
+	"permissions":
+	["*://www.google.com/*"],
+	
+	"web_accessible_resources":
+	["images/*.png"]
+
+}
