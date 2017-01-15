@@ -1,12 +1,13 @@
 {
 	"manifest_version":2,
 	"name":"my clock",
-	"version":"1.0",
+	"version":"0.0.0.1",
 	"description":"The first Chrome extension",
 	"icons":
 	{
 		"16":"images/icon16.png",
-		"48":"images/icon48.png"
+		"48":"images/icon48.png",
+		"128":"images/icon128.png"
 	},
 	"browser_action":
 	{
@@ -15,7 +16,7 @@
 			"19":"images/icon19.png",
 			"38":"images/icon38.png"
 		},
-		"default_title":"my clock",
+		"default_title":"clock",
 		"default_popup":"popup.html"
 	}
 }
