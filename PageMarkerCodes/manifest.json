@@ -1,8 +1,13 @@
 {
-	"manifest_version":2,
-	"name":"PageMarker",
-	"description":"Web pages markup tool.",
-	"version":"0.0.0.1",
+	// --------necessary properties
+	"manifest_version":2, // --must be present and set to 2 without quotes
+	"name":"PageMarker", // --name that will be shown in web page:chrome://extensions
+							  // --many extensions will be shown here.
+	"version":"0.0.0.1", // --four numbers separated by three points
+	// --------necessary properties
+
+
+	"description":"Web pages markup tool.", // --description in web page:chrome://extensions
 	// "default_locale":"en",
 
 	"icons":
@@ -18,7 +23,7 @@
 		"default_icon":
 		{
 			"52":"images/M52.png",
-			"104":"images/M104.png",
+			"104":"images/M104.png"
 			"128":"images/M128.png"
 		},
 		"default_title":"browser_action",
@@ -47,6 +52,17 @@
 	["*://www.google.com/*"],
 	
 	"web_accessible_resources":
-	["images/*.png"]
+	["images/*.png"],
+
+	// define what scripts are injected which web pages
+	// scripts will automatically run when that web page is active.
+	"content_scripts":
+	[
+		{
+			"matches":["http://www.google.com/*"],
+			"css":["mystyles.css"],
+			"js":["jquery.js", "mystyles.js"]
+		}
+	]
 
 }
