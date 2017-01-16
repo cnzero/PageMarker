@@ -1,0 +1,18 @@
+{
+	"manifest_version":2,
+	"name":"Baidu status",
+	"version":"1.0",
+
+	"background":
+	{
+		"scripts":
+		[
+			"status.js"
+		]
+	},
+
+	"permissions":
+	[
+		"https://www.baidu.com/"
+	]
+}
