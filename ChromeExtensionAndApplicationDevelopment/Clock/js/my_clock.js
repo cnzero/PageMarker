@@ -11,5 +11,5 @@ function my_clock(el)
 	s = s>=10?s:('0'+s);
 	el.innerHTML = h+":"+m+":"+s;
 	// --recursive to self-execution
-	setTimeout(function(){my_clock(el)}, 1000);
+	setTimeout(function(){my_clock(el)}, 10);
 }
