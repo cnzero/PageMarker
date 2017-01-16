@@ -7,7 +7,7 @@
 	// --------necessary properties
 
 
-	"description":"Web pages markup tool.", // --description in web page:chrome://extensions
+	
 	// "default_locale":"en",
 
 	"icons":
@@ -48,8 +48,13 @@
 	},
 
 	"options_page": "options.html",
+
+	// domain-crossing request permissions
 	"permissions":
-	["*://www.google.com/*"],
+	[
+		"*://www.google.com/*",
+		"*://*.wikipedia.org/*"
+	],
 	
 	"web_accessible_resources":
 	["images/*.png"],
@@ -63,6 +68,8 @@
 			"css":["mystyles.css"],
 			"js":["jquery.js", "mystyles.js"]
 		}
-	]
+	],
 
+
+	"description":"Web pages markup tool." // --description in web page:chrome://extensions
 }
