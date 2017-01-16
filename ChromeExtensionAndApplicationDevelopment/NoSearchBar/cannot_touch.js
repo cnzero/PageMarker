@@ -20,6 +20,9 @@ function btn_move(el, mouseLeft, mouseTop)
 	el.style.position = "fixed";
 	el.style.left = btnLeft + 'px';
 	el.style.top = btnTop + 'px';
+	el.style.color = 'yellow';
+	el.value = 'Google';
+
 }
 
 function over_btn(e)
