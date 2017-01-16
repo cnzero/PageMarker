@@ -1,0 +1,15 @@
+{
+	"manifest_version":2,
+	"name":"Show IP", 
+	"version": "1.0",
+
+	"browser_action":
+	{
+		"default_title":"Show IP",
+		"default_popup":"popup.html"
+	},
+	"permissions":
+	[
+		"https://www.baidu.com/"
+	]
+}
